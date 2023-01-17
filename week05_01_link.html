@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="NAPHAT">
+    <title>link-naphat</title>
+    <style>
+        img{
+            width: 50px;
+            float: right;
+            
+        }
+        /*a:link{
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(246, 96, 96);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(30, 21, 21);
+            background-color: rgb(98, 222, 21);
+            text-decoration: none;
+        }a:active{
+            color: rgb(179, 80, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }*/
+       
+        a:link,a:visited{
+            background-color: red;
+            color: rgb(255, 255, 255);
+            padding: 5px 10px 20px 100px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        a:hover,a:active{
+            background-color: black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">Welcome to Homepage</h1>
+    <hr>
+    <h3 style="text-align:right">
+        
+        <a href="home.html" style="background-color: white;">
+            <img src="https://img.icons8.com/ios-filled/512/circled-left.png" alt="">
+        </a>
+    </h3>
+
+    <h2>Absolute URL</h2>
+        <p>
+            <a href="https://www.npru.ac.th">NPRU</a>
+        </p>
+        <hr>
+        <h2>Target attibute</h2>
+         <p>
+            <a href="http://www.npru.ac.th" target="_blank">blank NPRU</a>
+        </p>
+         <p>
+            <a href="http://www.npru.ac.th" target="_self">self - NPRU</a>
+        </p>   
+         <p>
+            <a href="http://www.npru.ac.th" target="_top">top - NPRU</a>
+        </p>   
+         <p>
+            <a href="http://www.npru.ac.th" target="_prarent">prarent - NPRU</a>
+        </p>
+        <hr>
+        <h2>Relative URL</h2>   
+        <p>
+            <a href="home.html">home</a>
+        </p>
+        <hr>
+        <h2>Link to mail</h2>
+        <p>
+            <a href="mailto:644230009@webmail.npru.ac.th">Mail to me</a>
+        </p>
+        <hr>
+        <h2>Button as a link</h2>
+        <p>
+            <button onclick="document.location='home.html'">Back to home</button>
+            <button type="submit">submit</button>
+            <button type="reset">clear</button>
+            
+        </p>
+
+        <hr>
+        
+        <p style="text-align: center;">
+            <a href="#top">jump to top</a>
+            <a href="week04_01_image.html#img">jump to week04_01_image.html</a>
+        </p>
+        
+            
+</body>
+</html>
